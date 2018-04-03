@@ -20,7 +20,7 @@ html, body{
 }
 
 .hover{
-    flex-basis: 100%;
+    flex: 5;
 }
 
 .opacity{
