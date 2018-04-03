@@ -7,10 +7,27 @@ html, body{
 
 .container{
     display: flex;
-    justify-content: center;
     height: 100%;
 }
 
 .split{
-    align-self: center;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left{
+    background: url('./assets/gaming.jpg') center center;
+    background-size: cover;
+}
+
+.right{
+    background: url('./assets/programmer.jpg') center center;
+    background-size: cover;
+}
+
+h1{
+    color: #fff;
 }
