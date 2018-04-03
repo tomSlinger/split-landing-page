@@ -16,6 +16,7 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all ease-in-out 0.4s;
 }
 
 .left{
