@@ -1,105 +1,61 @@
-:root {
-    --container-bg-color: #333;
-    --hover-width: 75%;
-    --other-width: 25%;
-    --speed: 1000ms;
-}
-
 html, body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    height: 100%
 }
 
 .container{
-    position: relative;
-    width: 100%;
+    display: flex;
     height: 100%;
-    background: var(--container-bg-color);
 }
 
 .split{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 1s;
 }
 
-.split.left{
-    left: 0;
-    background: url('assets/gaming.jpg') center center no-repeat;
+.hover{
+    flex-grow: 4;
+}
+
+.opacity{
+    opacity: 0.8;
+}
+
+.left{
+    background: url('./assets/gaming.jpg') center center;
     background-size: cover;
 }
 
-.split.right{
-    right: 0;
-    background: url('assets/programmer.jpg') center center no-repeat;
+.right{
+    background: url('./assets/programmer.jpg') center center;
     background-size: cover;
-}
-
-.split.left, .split.right{
-    transition: var(--speed) all ease-in-out;
-}
-
-.hover-left .left{
-    width: var(--hover-width);
-}
-
-.hover-left .right{
-    width: var(--other-width);
-}
-
-.hover-left .right::before{
-    z-index: 2;
-}
-
-.hover-right .right{
-    width: var(--hover-width);
-}
-
-.hover-right .left{
-    width: var(--other-width);
-}
-
-.hover-right .left::before{
-    z-index: 2;
 }
 
 h1{
-    font-size: 4rem;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    white-space: nowrap;
     color: #fff;
+    font-size: 2rem;
 }
 
 .button{
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    height: 2.5rem;
-    padding-top: 1.3rem;
-    width: 15rem;
-    text-align: center;
-    color: #fff;
-    border: #fff solid 0.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
-    transform: translateX(-50%);
-    transition: all 0.3s;
+    border: 2px solid;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #8f410a;
+    transition: 0.25s;
+    font-weight: bold;
 }
 
-.split.left .button:hover, .split.right .button:hover{
-    font-size: 1.2rem;
-    width: 20rem;
-    height: 3rem;
-    background: #333
+.button:hover,
+.button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    transform: translateY(-0.25em);
 }

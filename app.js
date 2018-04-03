@@ -1,19 +1,24 @@
 // Get DOM elements
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
-const container = document.querySelector('.container');
 
 // Event Listeners
 left.addEventListener('mouseenter', () => {
-    container.classList.add('hover-left');
+    left.classList.add('hover');
+    right.classList.add('opacity');
 });
+
 left.addEventListener('mouseleave', () => {
-    container.classList.remove('hover-left');
+    left.classList.remove('hover');
+    right.classList.remove('opacity');
 });
 
 right.addEventListener('mouseenter', () => {
-    container.classList.add('hover-right');
+    right.classList.add('hover');
+    left.classList.add('opacity');
 });
+
 right.addEventListener('mouseleave', () => {
-    container.classList.remove('hover-right');
-});
+    right.classList.remove('hover');
+    left.classList.remove('opacity');
+})
