@@ -19,6 +19,14 @@ html, body{
     transition: all ease-in-out 0.4s;
 }
 
+.hover{
+    flex-basis: 100%;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
 .left{
     background: url('./assets/gaming.jpg') center center;
     background-size: cover;
