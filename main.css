@@ -20,7 +20,7 @@ html, body{
 }
 
 .hover{
-    flex: 5;
+    flex-grow: 4;
 }
 
 .opacity{
@@ -39,4 +39,5 @@ html, body{
 
 h1{
     color: #fff;
+    font-size: 2rem;
 }
