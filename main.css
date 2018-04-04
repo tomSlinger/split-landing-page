@@ -45,17 +45,18 @@ h1{
 
 .button{
     text-decoration: none;
-    border: 2px solid;
+    border: 3px solid;
+    border-radius: 5px;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
-    color: #8f410a;
+    color: #72dd47;
     transition: 0.25s;
     font-weight: bold;
 }
 
 .button:hover,
 .button:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    box-shadow: 0 0.5em 0.5em -0.4em #B3F198;
     transform: translateY(-0.25em);
 }
